@@ -39,12 +39,10 @@ img {
 .image-container {
 	grid-column: 2 / span 4;
 	width: 100%;
-	border-radius: 6px;
 }
 
 .section-container {
 	grid-column: 7 / span 4;
-	border-radius: 6px;
 }
 
 .section-container h1 {
@@ -82,4 +80,50 @@ img {
 	justify-self: center;
 	color: #bdbdbd;
 	padding: 30px;
+}
+
+@media (max-width: 600px) {
+	.main {
+		grid-template-columns: repeat(1, 1fr);
+
+		grid-template-rows: repeat(4, 1fr);
+	}
+
+	.image-container {
+		grid-column: 1 / span 1;
+		grid-row: 2 / span 1;
+		/* padding-top: 20px; */
+	}
+
+	.section-container {
+		grid-column: 1 / span 1;
+		grid-row: 3 / span 3;
+		margin: 0;
+	}
+
+	.section-container h1 {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 2.8rem;
+		padding: 15px;
+		line-height: 71px;
+		letter-spacing: -0.035em;
+		margin: 0;
+	}
+
+	.section-container h4 {
+		color: #4f4f4f;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1.2rem;
+		margin: 0;
+		padding: 15px;
+	}
+	.section-container button {
+		margin-left: 20px;
+	}
+
+	.footer {
+		font-size: 0.8rem;
+	}
 }
