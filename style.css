@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #333333;
+	background-color: snow;
+	margin: 0 auto;
+	font-family: 'Space Mono', monospace;
+}
+
+img {
+	width: 100%;
+}
+
+.container {
+	display: grid;
+	height: 100vh;
+	grid-template-rows: auto 1fr auto;
+}
+
+.header {
+	padding-left: 50px;
+	padding-top: 30px;
+	font-weight: 700;
+	font-family: 'Inconsolata';
+	font-style: normal;
+	font-size: 1.2rem;
+}
+.main {
+	display: grid;
+	grid-template-columns: repeat(12, 6fr);
+	align-items: center;
+}
+
+.image-container {
+	grid-column: 2 / span 4;
+	width: 100%;
+	border-radius: 6px;
+}
+
+.section-container {
+	grid-column: 7 / span 4;
+	border-radius: 6px;
+}
+
+.section-container h1 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 4rem;
+	line-height: 95px;
+	letter-spacing: -0.035em;
+}
+
+.section-container h4 {
+	color: #4f4f4f;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.2rem;
+	margin-right: 50%;
+}
+
+.section-container button {
+	align-content: center;
+	background-color: #333333;
+	color: white;
+	margin-top: 60px;
+	padding: 20px 40px;
+	font-family: 'Inconsolata';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.8rem;
+	line-height: 21px;
+	letter-spacing: -0.035em;
+	text-transform: uppercase;
+}
+
+.footer {
+	justify-self: center;
+	color: #bdbdbd;
+	padding: 30px;
+}
